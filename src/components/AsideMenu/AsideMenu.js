@@ -14,8 +14,6 @@ const asidemenu=(props) =>{
 		    <Route path="/service" exact render={() =>{ 
 		    	return(
 		      <Menu1 classAdd='service_aside' menuitems={props.AsideMenuItems.Aside1} />
-
-
 		      )
 
 		       }} /> 
@@ -25,15 +23,13 @@ const asidemenu=(props) =>{
 		      )
 		       }  
 		   		} />
-
-
 		       <Route path="/" exact render={() =>  { 
 		    	return(
 		      <Menu1 classAdd='service_aside' menuitems={props.AsideMenuItems.Aside2} /> 
 		      )
 		       }
 		         } />
-             <Route path="/shop" exact render={() =>   <Menu1 classAdd='service_aside' menuitems={props.AsideMenuItems.Aside2} />  } />
+             <Route path="/shop"  render={() =>   <Menu1 classAdd='service_aside' menuitems={props.AsideMenuItems.Aside2} />  } />
             
              </div>
 

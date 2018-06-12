@@ -48,8 +48,11 @@ clickPag(a){
     
 }
 
-habdleNum(num){
+habdleNum =(num)=>{
   alert("App" +num);
+  this.setState({
+shopPage:num
+  })
 }
 
   render() {
@@ -64,8 +67,8 @@ habdleNum(num){
                
                   <Route path="/" exact component={Mainslider} /> 
                   <Route path="/service" exact render={() =>  <Service /> } /> 
-                  <Route path="/shop" exact render={() =>  <Shop productionData={this.state.productsData} /> } /> 
-                  <Route path="/shop" exact render={() =>  <Pagination num={this.habdleNum} clickPag={this.clickPag} items={this.state.productsData} /> } /> 
+                  <Route path="/shop"  render={() =>  <Shop pagenumber={this.state.shopPage} productionData={this.state.productsData} /> } /> 
+                  <Route path="/shop"  render={() =>  <Pagination pageNumber={this.state.shopPage} num={this.habdleNum} clickPag={this.clickPag} items={this.state.productsData} /> } /> 
 
         </div>
         </div>
