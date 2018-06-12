@@ -7078,3 +7078,7 @@ position: fixed;
 .last_services{
 	border-bottom: 0px;
 }
+.hedaer_nav_active{
+   background-color: #e7e7e7;
+    color: #00afef;
+}

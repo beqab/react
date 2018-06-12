@@ -1,5 +1,6 @@
-import React from 'react'
-import Menu from './Menu/Menu'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import Menu from './Menu/Menu';
 const header = (props) =>{
 	return(
 
@@ -15,7 +16,7 @@ const header = (props) =>{
         <span className="icon-bar"></span>
         <span className="icon-bar"></span>
       </button>
-      <a className="navbar-brand" href="<?php echo home_url(); ?>">saitissxeli.ge</a>
+      <Link className="navbar-brand" to='/' exact>saitissxeli.ge</Link>
     </div>
 
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">

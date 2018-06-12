@@ -1,6 +1,6 @@
 import React from 'react';
-import Product from './Product/Product'
-
+import Product from './Product/Product';
+import {Link} from 'react-router-dom';
 
 const production = (props) =>{
   let prosuctRender = props.productionData.slice(0,8).map(item => {
@@ -16,7 +16,7 @@ const production = (props) =>{
                {prosuctRender}
            
                           <div className="all col-md-12">
-                  <a   href="shop.html">ყველა</a>
+                  <Link to='/shop' >ყველა</Link>
               </div>
         </div>
 
